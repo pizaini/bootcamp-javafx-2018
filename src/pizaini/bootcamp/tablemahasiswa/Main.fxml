@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="381.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizaini.bootcamp.tablemahasiswa.MainController">
+   <children>
+      <TableView fx:id="tableMahasiswa" layoutX="7.0" layoutY="116.0" prefHeight="251.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="colNama" prefWidth="190.0" text="Nama" />
+          <TableColumn fx:id="colNIM" prefWidth="157.0" text="NIM" />
+            <TableColumn fx:id="colUmur" prefWidth="173.0" text="Umur" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
