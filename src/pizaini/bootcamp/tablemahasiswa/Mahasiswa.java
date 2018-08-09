@@ -19,6 +19,15 @@ public class Mahasiswa {
     private final StringProperty nama = new SimpleStringProperty(this, "nama");
     private final StringProperty nim = new SimpleStringProperty(this, "nim");
     private final IntegerProperty umur = new SimpleIntegerProperty(this, "umur");
+    
+    public Mahasiswa() {
+    }
+    
+    public Mahasiswa(String nama, String nim, Integer umur) {
+        this.nama.set(nama);
+        this.nim.set(nim);
+        this.umur.set(umur);
+    }
 
     public int getUmum() {
         return umur.get();
@@ -32,14 +41,6 @@ public class Mahasiswa {
         return umur;
     }
     
-
-    public Mahasiswa() {
-    }
-    
-    public Mahasiswa(String nama, String nim) {
-        this.nama.set(nama);
-        this.nim.set(nim);
-    }
     
     public String getNim() {
         return nim.get();
