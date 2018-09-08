@@ -59,7 +59,7 @@ public class Player2Controller implements Initializable {
         this.fileChooser = new FileChooser();
         this.fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("mp3", "*.mp3"));
         //binding
-        labelVolume.textProperty().bind(progressVolume.valueProperty().asString("%.0f%n"));
+        labelVolume.textProperty().bind(progressVolume.valueProperty().asString("%.0f"));
     }    
     
     public void openFile(){

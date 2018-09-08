@@ -24,6 +24,7 @@ public class RunPlayer3 extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Player3.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("FXMP3Player");
         stage.show();
     }
 
